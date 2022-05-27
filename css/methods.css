@@ -1,0 +1,52 @@
+.methods {
+    display: flex;
+    justify-content: space-around;
+    padding: 5em 0;
+}
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5.5em;
+    height: 5.5em;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+.conditions p {
+    color: #1f1f1f;
+}
+.conditions__itens{
+    font-size: 2em;
+    color: #b1b2bc;
+}
+.conditions__itens:hover {
+    color: #60606d;
+}
+@media screen and (min-width: 500px) {
+    .conditions {
+        width: 6.5em;
+        height: 6.5em;
+    }
+    .conditions__itens, 
+    .conditions__itens p{
+    font-size: 2.5em;
+    }
+}
+@media screen and (min-width: 820px) {
+    .methods {
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+    .conditions {
+        width: 8.5em;
+        height: 8.5em;
+    }
+    .conditions__itens{
+    font-size: 3.5em;
+    }
+    .conditions p{
+        font-size: 1.5em;
+    }
+}

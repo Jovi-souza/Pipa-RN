@@ -1,0 +1,136 @@
+header{
+    background-image: url(/imagens/card-img-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+}
+.nav__link, .logo {
+    display: none;
+}
+.nav__bar {
+    background-color: #353536;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    border-top: 2px solid #b1b2bc;
+    border-left: 3px solid #b1b2bc;
+}
+.nav__itens {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    padding: 0.3em;
+}
+.nav__icon {
+    font-size: 1.5em;
+    margin: auto 1.5rem;
+    color: #fff;
+    transition: .5s;
+}
+.nav__icon:hover {
+    color: #0083DB;
+    transition: .5s;
+}
+
+.header__content {
+    padding: 3.5em 1.5em;
+}
+.header__title{
+    font-size: 2.5em;
+    color: #eeeef0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.699);
+}
+.header__about {
+    margin: .5em 0; 
+    width: 10em;
+    font-size: 1.2em;
+    color: #eeeef0;
+    text-shadow: 2px 2px 2px #000;
+}
+.header__btn {
+    color: #fff;
+    background-color: #00548C;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: .5em;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    transition: .5s;
+}
+.header__btn:hover {
+    color: rgba(0, 0, 0, 0.800);
+    transition: .5s;
+}
+
+@media screen and (min-width: 500px) {
+    header{
+        position: relative;
+        background-image: url(/imagens/pipa-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        width: 100%;
+    }
+    .nav__bar {
+        background-color: transparent;
+        position: initial;
+        border: 0px;
+    }
+    .nav__itens {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    .nav__link {
+        display: block;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.125em;
+        margin: 0 1em;
+    }
+    .nav__icon {
+        display: none;
+    }
+
+    .header__content {
+        padding: 8em 3em;
+    }
+    .header__title{
+        font-size: 3.5em;
+        line-height: 1.125em;
+    }
+    .header__about {
+        margin: .5em 0; 
+        width: auto;
+        font-size: 1em;
+        color: #eeeef0;
+        text-shadow: 2px 2px 2px #000;
+    }
+    .header__btn {
+        margin-top: 1.5em;
+        padding: 1em;
+    }
+}
+
+@media screen and (min-width: 820px){
+    .header{
+        height: 95vh;
+    }
+    .nav__itens {
+        top: 1.5em;
+    }
+}
+@media screen and (min-width: 970px) {
+    .header__content {
+        padding: 8em;
+    }
+    .header__title {
+        font-size: 4em;
+    }
+    .header__btn {
+        font-size: 1em;
+    }
+}

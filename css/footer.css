@@ -1,0 +1,30 @@
+.rodape {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+.redes__sociais {
+    color: #b1b2bc;
+    margin: .5em 0;
+    font-size: 2em;
+}
+.redes__sociais:hover {
+    color: #60606d;
+}
+@media screen and (min-width: 500px) {
+    .rodape {
+        height: auto;
+    }
+}
+@media screen  and (min-width: 820px){
+    .rodape {
+        height: max-content;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .redes__sociais {
+        font-size: 2.5em;
+        margin: .2em 0 0 0;
+    }
+}
