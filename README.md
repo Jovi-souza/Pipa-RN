@@ -1,2 +1,2 @@
-# Turismo
+# TPipa-RN
 Treinando conhecimentos
